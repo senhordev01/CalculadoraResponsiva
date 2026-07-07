@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin: 0;
+}
+
+.Calculadora{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 100px;
+}
+
+.interface{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 50px;
+    left: 90px;  
+
+    width: 300px;
+    height: 100px;
+
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+#Resultado-Final{
+    color: rgb(248, 248, 248);
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.Elementos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+}
+
+.Parte-Numerica{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 80px;
+    gap: 5px;
+}
+
+.Operacoes{
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    top: 100px;
+    width: 210px;
+    height: 50px;
+    gap: 5px;
+    left: 170px;
+}
+
+.numeros{
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline: none;
+    border: 0;
+}
+
+.numeros:hover{
+    background-color: rgb(177, 0, 0);
+    filter: saturate(0.8);
+}
+
+#Operador{
+    font-size: 20px;
+    background-color: #ff5e00;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    outline: none;
+    border: 0;
+}
+
+#Operador:hover{
+    background-color: #ff5e00;
+    filter: saturate(0.6);
+}
