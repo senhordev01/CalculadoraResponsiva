@@ -30,14 +30,14 @@
             </div>
 
             <div class="Operacoes">
-                <button id="Operador">x</button>
-                <button id="Operador">÷</button>
+                <button id="Operador"onclick="operacoes('x')">x</button>
+                <button id="Operador" onclick="operacoes('÷')">÷</button>
                 <button id="Operador" onclick="Limpar()">c</button>
-                <button id="Operador">%</button>
-                <button id="Operador">+</button>
-                <button id="Operador">-</button>
-                <button id="Operador">=</button>
-                <button id="Operador">,</button>
+                <button id="Operador" onclick="operacoes('%')">%</button>
+                <button id="Operador" onclick="operacoes('+')">+</button>
+                <button id="Operador" onclick="operacoes('-')">-</button>
+                <button id="Operador" onclick="Calcular()">=</button>
+                <button id="Operador" onclick="operacoes(',')">,</button>
 
             </div>
             <script src="/sistema/index.js"></script>
