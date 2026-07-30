@@ -1,6 +1,6 @@
 
 const numero = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-const operadores = ["x", "÷", "+", "-","%", "."]
+const operadores = ["x", "÷", "+", "-","%", ".", "^"];
 const Resultado = document.getElementById("Resultado-Final");
 
 function Num_Inicial(){
@@ -46,19 +46,22 @@ function Calcular(){
     let operador;
 
     if(conta.includes("+")){
-        operador = "+"
+        operador = "+";
     }
     else if(conta.includes("-")){
-        operador = "-"
+        operador = "-";
     }
     else if(conta.includes("x")){
-        operador = "x"
+        operador = "x";
     }
     else if(conta.includes("÷")){
-        operador = "÷"
+        operador = "÷";
     }
     else if(conta.includes("%")){
-        operador = "%"
+        operador = "%";
+    }
+    else if(conta.includes("^")){
+        operador = "^";
     }
     let partes = conta.split(operador);
 
@@ -82,6 +85,9 @@ function Calcular(){
             break;
         case "%":
             resultado = (n1 * n2)/100;
+            break;
+        case "^":
+            resultado = n1 ** n2;
             break;
         
         default:
